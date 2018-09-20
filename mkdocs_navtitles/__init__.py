@@ -7,7 +7,7 @@ import copy
 
 class NavTitleLoader(BasePlugin):
 
-    def on_nav(self, site_navigation, config):
-        for page in site_navigation.pages:
+    def on_nav(self, nav, config, files):
+        for page in nav.pages:
             page.read_source(config)
 
